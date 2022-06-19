@@ -718,12 +718,11 @@ function detect_exe() {
   });
 }
 function final_phase() {
-  console.log("got here");
   switch (Project.get_vars.platform) {
     case "github":
     case "simulateonline":
     case "server":
-      alert("got here too");
+      /*
       online_data_obj.save_queue_add(function () {
         online_save(
           Project.get_vars.location,
@@ -796,6 +795,7 @@ function final_phase() {
           project_json.responses.length
         );
       });
+      */
       download_at_end = project_json.this_condition.download_at_end;
       if (download_at_end === undefined) {
         download_at_end = "on";
@@ -816,10 +816,10 @@ function final_phase() {
 
       if (download_at_end === "on") {
         $("#download_div").html(
-          "<h3 class='text-primary'>If you would like to save your data (e.g. for your interest or as a back-up) press CTRL-S and you should be able to directly download your data.</h3>"
+          "<h3 class='text-primary'><h1>Thank you for participating. If you'd like to download your raw data <span id='download_json'>click here</span></h1></h3>"
         );
       } else if (download_at_end === "off") {
-        $("#download_div").html(
+        $("#download_div").html(""
           /*
           "<h1 class='text-danger'>" +
             "<h3 class='text-primary'>If you would like to save your data (e.g. for your interest or as a back-up) press CTRL-S and you should be able to directly download your data.</h3>"
@@ -862,8 +862,8 @@ function final_phase() {
                   "What do you want to save this file as?"
                 );
               });
-              $("#participant_country").show();
-              $("#participant_country").load("ParticipantCountry.html");
+              //$("#participant_country").show();
+              //$("#participant_country").load("ParticipantCountry.html");
               window.localStorage.removeItem("project_json");
               window.localStorage.removeItem("username");
               window.localStorage.removeItem("completion_code");
@@ -879,7 +879,7 @@ function final_phase() {
           }
         }, 1000);
       }
-      online_save_check();
+      //online_save_check();
       break;
     case "localhost":
     case "preview":
