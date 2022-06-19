@@ -1,3 +1,3 @@
-name,notes,stimuli,procedure,fullscreen,welcome,participant_id,end_message,start_message,buffer,scripts,
-condition_1,You can put more detailed notes in this field,stimuli_1.csv,procedure_1.csv,off,,on,,,5,,
-condition_2,You can put more detailed notes in this field,stimuli_1.csv,procedure_1.csv,off,,on,,,5,,
+name,notes,stimuli,procedure,fullscreen,welcome,participant_id,end_message,start_message,buffer,scripts,sona_url,
+condition_1,You can put more detailed notes in this field,stimuli_1.csv,procedure_1.csv,off,,on,,,5,,https://rdg-psychology.sona-systems.com/webstudy_credit.aspx?experiment_id=2564&credit_token=1ed418f4dab247f1873508cf2d8ba7e9&survey_code=XXXX&sona_id=%SURVEY_CODE%,
+condition_2,You can put more detailed notes in this field,stimuli_1.csv,procedure_1.csv,off,,on,,,5,,https://rdg-psychology.sona-systems.com/webstudy_credit.aspx?experiment_id=2564&credit_token=1ed418f4dab247f1873508cf2d8ba7e9&survey_code=XXXX&sona_id=%SURVEY_CODE%,

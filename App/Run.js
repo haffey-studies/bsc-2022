@@ -831,7 +831,7 @@ function final_phase() {
       }
       if(typeof(project_json.this_condition.sona_url) !== "undefined"){
         if(typeof(Project.get_vars.sona_id) === "undefined"){
-          bootbox.alert("There seems to be a problem with how the researcher has set up the connection FROM SONA to Collector. Please tell them to include '?sona_id=%SURVEY_CODE%'. Note that the '?' in this link should be replaced by an '&' if they already have a '?' in their URL");
+          bootbox.alert("There seems to be a problem with how the researcher has set up the connection FROM SONA to Collector. Please tell them to include '&sona_id=%SURVEY_CODE%' towards the end of the URL.");
         } else {
           $("#download_div").append(
             $("<div>")

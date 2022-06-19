@@ -12,7 +12,7 @@
         "all_procs": {
           "procedure_1.csv": "item,phasetype,max_time,text,shuffle_1,\r\n2,instruct,user,This is the start of a new experiment.,off,"
         },
-        "conditions": "name,notes,stimuli,procedure,fullscreen,welcome,participant_id,end_message,start_message,buffer,scripts,\r\ncondition_1,You can put more detailed notes in this field,stimuli_1.csv,procedure_1.csv,off,,on,,,5,,\r\ncondition_2,You can put more detailed notes in this field,stimuli_1.csv,procedure_1.csv,off,,on,,,5,,",
+        "conditions": "name,notes,stimuli,procedure,fullscreen,welcome,participant_id,end_message,start_message,buffer,scripts,sona_url,\r\ncondition_1,You can put more detailed notes in this field,stimuli_1.csv,procedure_1.csv,off,,on,,,5,,https://rdg-psychology.sona-systems.com/webstudy_credit.aspx?experiment_id=2564&credit_token=1ed418f4dab247f1873508cf2d8ba7e9&survey_code=XXXX&sona_id=%SURVEY_CODE%,\r\ncondition_2,You can put more detailed notes in this field,stimuli_1.csv,procedure_1.csv,off,,on,,,5,,https://rdg-psychology.sona-systems.com/webstudy_credit.aspx?experiment_id=2564&credit_token=1ed418f4dab247f1873508cf2d8ba7e9&survey_code=XXXX&sona_id=%SURVEY_CODE%,",
         "all_stims": {
           "stimuli_1.csv": "cue,answer,\r\nA,Apple,\r\nB,Banana,\r\n,,"
         },
