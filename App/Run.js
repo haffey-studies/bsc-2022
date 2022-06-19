@@ -718,6 +718,7 @@ function detect_exe() {
   });
 }
 function final_phase() {
+  console.log("got here");
   switch (Project.get_vars.platform) {
     case "github":
     case "simulateonline":
