@@ -723,6 +723,7 @@ function final_phase() {
     case "github":
     case "simulateonline":
     case "server":
+      alert("got here too");
       online_data_obj.save_queue_add(function () {
         online_save(
           Project.get_vars.location,
@@ -815,19 +816,14 @@ function final_phase() {
 
       if (download_at_end === "on") {
         $("#download_div").html(
-          "<h1 class='text-danger'>" +
-            "Please wait while we confirm that all your data has been saved" +
-            "</h1>" +
-            '<div class="progress">' +
-            '<div id="google_progress" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">' +
-            "</div>" +
-            "</div>" +
-            "<h3 class='text-primary'>Please do not close this window until it has been confirmed that the researcher has been e-mailed your data (or you have downloaded the data yourself that you will e-mail the researcher). If you do not get a prompt to do this within 30 seconds, press CTRL-S and you should be able to directly download your data.</h3>"
+          "<h3 class='text-primary'>If you would like to save your data (e.g. for your interest or as a back-up) press CTRL-S and you should be able to directly download your data.</h3>"
         );
       } else if (download_at_end === "off") {
         $("#download_div").html(
+          /*
           "<h1 class='text-danger'>" +
             "<h3 class='text-primary'>If you would like to save your data (e.g. for your interest or as a back-up) press CTRL-S and you should be able to directly download your data.</h3>"
+          */
         );
       }
       if(typeof(project_json.this_condition.sona_url) !== "undefined"){
